@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { ArrowDown, ArrowUpRight } from 'lucide-react'
 import { useLanguage } from '../i18n/LanguageContext'
+import cover from '../images/coucher.jpg'
 
 export default function Hero() {
   const { t } = useLanguage()
@@ -10,9 +11,20 @@ export default function Hero() {
 
   return (
     <section id="top" className="relative overflow-hidden bg-ink">
-      <div className="grid-lines pointer-events-none absolute inset-0" />
+      <motion.div
+        initial={{ opacity: 0, scale: 1.06 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1.6, ease: [0.22, 1, 0.36, 1] }}
+        className="absolute inset-0"
+      >
+        <img
+          src={cover}
+          alt=""
+          className="h-full w-full object-cover"
+        />
+      </motion.div>
       <div
-        className="pointer-events-none absolute -top-40 right-[-10%] h-[560px] w-[560px] rounded-full bg-accent/20 blur-[140px]"
+        className="pointer-events-none absolute inset-0 bg-gradient-to-b from-ink/70 via-ink/20 to-ink/90"
         aria-hidden
       />
 
