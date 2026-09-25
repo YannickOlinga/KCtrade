@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Marquee from './components/Marquee'
@@ -9,6 +10,13 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 export default function App() {
+  useEffect(() => {
+    if (window.location.hash) {
+      const el = document.querySelector(window.location.hash)
+      if (el) setTimeout(() => el.scrollIntoView({ behavior: 'smooth' }), 150)
+    }
+  }, [])
+
   return (
     <>
       <Navbar />

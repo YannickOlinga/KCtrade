@@ -15,12 +15,13 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
+  const base = import.meta.env.BASE_URL
   const links = [
-    ['about', t('nav.about')],
-    ['products', t('nav.products')],
-    ['hse', t('nav.hse')],
-    ['careers', t('nav.careers')],
-    ['contact', t('nav.contact')],
+    [`${base}entreprise.html`, t('nav.entreprise')],
+    [`${base}#products`, t('nav.products')],
+    [`${base}#hse`, t('nav.hse')],
+    [`${base}#careers`, t('nav.careers')],
+    [`${base}#contact`, t('nav.contact')],
   ]
 
   return (
@@ -33,17 +34,17 @@ export default function Navbar() {
     >
       <div className="mx-auto flex h-[72px] max-w-7xl items-center justify-between px-6 lg:px-10">
         <a
-          href="#top"
+          href={base}
           className="font-display text-lg font-bold tracking-tight text-paper"
         >
           KC<span className="text-accent">.</span>TRADE
         </a>
 
         <nav className="hidden items-center gap-8 lg:flex">
-          {links.map(([id, label]) => (
+          {links.map(([href, label]) => (
             <a
-              key={id}
-              href={`#${id}`}
+              key={href}
+              href={href}
               className="text-[13px] font-medium text-paper/70 transition-colors hover:text-paper"
             >
               {label}
@@ -66,7 +67,7 @@ export default function Navbar() {
             ))}
           </div>
           <a
-            href="#contact"
+            href={`${base}#contact`}
             className="group inline-flex items-center gap-1.5 bg-accent px-4 py-2 text-[13px] font-semibold text-white transition-colors hover:bg-accent-deep"
           >
             {t('nav.cta')}
@@ -92,10 +93,10 @@ export default function Navbar() {
             className="overflow-hidden border-b border-white/10 bg-ink/95 backdrop-blur-xl lg:hidden"
           >
             <nav className="flex flex-col gap-1 px-6 py-6">
-              {links.map(([id, label]) => (
+              {links.map(([href, label]) => (
                 <a
-                  key={id}
-                  href={`#${id}`}
+                  key={href}
+                  href={href}
                   onClick={() => setOpen(false)}
                   className="py-2.5 font-display text-2xl font-semibold text-paper"
                 >

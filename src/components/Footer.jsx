@@ -4,12 +4,13 @@ import { useLanguage } from '../i18n/LanguageContext'
 export default function Footer() {
   const { t } = useLanguage()
 
+  const base = import.meta.env.BASE_URL
   const links = [
-    ['about', t('nav.about')],
-    ['products', t('nav.products')],
-    ['hse', t('nav.hse')],
-    ['careers', t('nav.careers')],
-    ['contact', t('nav.contact')],
+    [`${base}entreprise.html`, t('nav.entreprise')],
+    [`${base}#products`, t('nav.products')],
+    [`${base}#hse`, t('nav.hse')],
+    [`${base}#careers`, t('nav.careers')],
+    [`${base}#contact`, t('nav.contact')],
   ]
 
   return (
@@ -31,10 +32,10 @@ export default function Footer() {
                 {t('footer.nav')}
               </p>
               <ul className="mt-4 space-y-2.5">
-                {links.map(([id, label]) => (
-                  <li key={id}>
+                {links.map(([href, label]) => (
+                  <li key={href}>
                     <a
-                      href={`#${id}`}
+                      href={href}
                       className="text-sm text-paper/60 transition-colors hover:text-accent"
                     >
                       {label}
@@ -69,7 +70,7 @@ export default function Footer() {
             {t('footer.rights')} — {t('footer.group')}
           </p>
           <a
-            href="#top"
+            href={base}
             className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-paper/50 transition-colors hover:text-accent"
           >
             Top <ArrowUp className="h-3.5 w-3.5" />

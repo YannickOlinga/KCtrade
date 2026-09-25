@@ -1,6 +1,7 @@
 export const translations = {
   fr: {
     nav: {
+      entreprise: "L'Entreprise",
       about: "À propos",
       products: "Produits & Services",
       hse: "Engagement HSE",
@@ -117,6 +118,77 @@ export const translations = {
         submit: "Envoyer le message",
       },
     },
+    ent: {
+      label: "L'Entreprise",
+      title: "Plus qu'une entreprise, une marque",
+      intro:
+        "KC TRADE International S.A. se définit comme apporteur de solutions dans le transport des produits pétroliers, le transit, la logistique, la prestation de services et le commerce général.",
+      meta: ["Créée en 2022", "Akwa — Douala", "Groupe Ketchanga"],
+      about: {
+        label: "Qui sommes-nous",
+        title: "Une entité du Groupe Ketchanga",
+        body: "Créée en 2022 et située à Akwa-Douala, au 646 rue Sylvanie, KC TRADE International est une entité du Groupe Ketchanga. Notre ambition : répondre aux besoins spécifiques de nos clients en respectant les valeurs fondamentales du groupe — innovation, excellence et satisfaction client.",
+        body2:
+          "Grâce à une équipe compétente et passionnée, nous mettons un point d'honneur à dépasser vos attentes, toujours en quête d'amélioration et d'innovation.",
+        facts: [
+          { k: "Fondation", v: "2022" },
+          { k: "Siège", v: "646 rue Sylvanie, Akwa — Douala" },
+          { k: "Groupe", v: "Groupe Ketchanga" },
+          { k: "Domaines", v: "Pétrole · Transit · Logistique · Commerce" },
+        ],
+      },
+      missions: {
+        label: "Nos missions",
+        title: "Ce qui nous anime chaque jour",
+        items: [
+          {
+            title: "Énergie fiable",
+            desc: "Fournir une énergie fiable, durable et accessible pour répondre aux besoins quotidiens de nos concitoyens.",
+          },
+          {
+            title: "Chaîne maîtrisée",
+            desc: "Contrôler toute la chaîne d'approvisionnement, de la source jusqu'à nos clients.",
+          },
+          {
+            title: "Satisfaction client",
+            desc: "Répondre aux besoins spécifiques de chaque client avec innovation et excellence.",
+          },
+          {
+            title: "Impact national",
+            desc: "Soutenir le développement économique du Cameroun à travers l'accès à l'énergie.",
+          },
+        ],
+      },
+      clients: {
+        label: "Nos clients",
+        title: "Au service de ceux qui font avancer le pays",
+        body: "De l'industrie au transport, nos solutions énergétiques accompagnent tous les secteurs qui construisent le Cameroun.",
+        items: [
+          { title: "Industrie & grands groupes", desc: "Contrats d'approvisionnement dédiés." },
+          { title: "Transport & logistique", desc: "Gasoil pour flottes et transporteurs." },
+          { title: "Stations-service", desc: "Ravitaillement et partenariats réseau." },
+          { title: "Secteur agricole", desc: "Approvisionnement direct des exploitations." },
+          { title: "Énergie & utilities", desc: "Fioul et carburants pour la production." },
+          { title: "BTP & travaux publics", desc: "Bitume pour la construction routière." },
+        ],
+      },
+      life: {
+        label: "Vie de l'entreprise",
+        title: "Une équipe, une énergie",
+        body: "La performance commence par les personnes. Moments de convivialité, célébrations et cohésion : la Fête du Travail vécue ensemble, en équipe.",
+        quote: "« Plus qu'une entreprise, nous sommes une marque. »",
+        captions: [
+          "L'équipe réunie",
+          "Fête du Travail",
+          "Moments partagés",
+          "Nos couleurs, notre fierté",
+        ],
+      },
+      cta: {
+        title: "Envie de travailler avec nous ?",
+        button: "Contactez-nous",
+      },
+    },
     footer: {
       tagline: "Votre partenaire énergétique de confiance au Cameroun.",
       nav: "Navigation",
@@ -127,6 +199,7 @@ export const translations = {
   },
   en: {
     nav: {
+      entreprise: "The Company",
       about: "About",
       products: "Products & Services",
       hse: "HSE Commitment",
@@ -241,6 +314,77 @@ export const translations = {
         email: "Email",
         message: "Your message",
         submit: "Send message",
+      },
+    },
+    ent: {
+      label: "The Company",
+      title: "More than a company, a brand",
+      intro:
+        "KC TRADE International S.A. positions itself as a solutions provider in petroleum product transport, transit, logistics, services and general trade.",
+      meta: ["Founded in 2022", "Akwa — Douala", "Ketchanga Group"],
+      about: {
+        label: "Who we are",
+        title: "A member of the Ketchanga Group",
+        body: "Founded in 2022 and based in Akwa-Douala at 646 rue Sylvanie, KC TRADE International is an entity of the Ketchanga Group. Our ambition: meet the specific needs of our clients while upholding the group's core values — innovation, excellence and customer satisfaction.",
+        body2:
+          "With a skilled and passionate team, we strive to exceed expectations, always seeking improvement and innovation.",
+        facts: [
+          { k: "Founded", v: "2022" },
+          { k: "Head office", v: "646 rue Sylvanie, Akwa — Douala" },
+          { k: "Group", v: "Ketchanga Group" },
+          { k: "Fields", v: "Petroleum · Transit · Logistics · Trade" },
+        ],
+      },
+      missions: {
+        label: "Our missions",
+        title: "What drives us every day",
+        items: [
+          {
+            title: "Reliable energy",
+            desc: "Deliver reliable, sustainable and accessible energy for everyday needs.",
+          },
+          {
+            title: "Controlled supply chain",
+            desc: "Control the entire supply chain, from source to customer.",
+          },
+          {
+            title: "Customer satisfaction",
+            desc: "Meet each client's specific needs with innovation and excellence.",
+          },
+          {
+            title: "National impact",
+            desc: "Support Cameroon's economic development through access to energy.",
+          },
+        ],
+      },
+      clients: {
+        label: "Our clients",
+        title: "Serving those who move the country forward",
+        body: "From industry to transport, our energy solutions support every sector building Cameroon.",
+        items: [
+          { title: "Industry & large groups", desc: "Dedicated supply contracts." },
+          { title: "Transport & logistics", desc: "Diesel for fleets and carriers." },
+          { title: "Service stations", desc: "Supply and network partnerships." },
+          { title: "Agriculture", desc: "Direct supply to farms and estates." },
+          { title: "Energy & utilities", desc: "Fuel oil and fuels for production." },
+          { title: "Construction & public works", desc: "Bitumen for road building." },
+        ],
+      },
+      life: {
+        label: "Company life",
+        title: "One team, one energy",
+        body: "Performance starts with people. Moments of togetherness, celebrations and cohesion: Labour Day experienced together, as a team.",
+        quote: '"More than a company, we are a brand."',
+        captions: [
+          "The team together",
+          "Labour Day",
+          "Shared moments",
+          "Our colours, our pride",
+        ],
+      },
+      cta: {
+        title: "Want to work with us?",
+        button: "Get in touch",
       },
     },
     footer: {
