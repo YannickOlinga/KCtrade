@@ -26,6 +26,7 @@ export const translations = {
       body: "Fondée sur l'excellence et l'intégrité, KC TRADE International S.A s'est imposée comme un acteur de référence dans l'importation et la distribution de produits pétroliers au Cameroun. Notre mission : fournir une énergie fiable, durable et accessible pour soutenir le développement économique.",
       body2:
         "Grâce à nos infrastructures modernes — dépôts de stockage stratégiques et flotte de camions citernes dédiée — nous maîtrisons toute la chaîne d'approvisionnement, de la source jusqu'à nos clients.",
+      imgCaption: "Dépôts de stockage stratégiques",
       values: [
         {
           title: "L'exigence de qualité",
@@ -50,6 +51,7 @@ export const translations = {
       title: "Des solutions énergétiques adaptées à tous vos besoins",
       intro:
         "Nous importons et approvisionnons en grandes quantités les produits pétroliers essentiels à l'industrie, au transport et au secteur énergétique camerounais.",
+      imgCaption: "Flotte de camions citernes dédiée",
       items: [
         { name: "Super", desc: "Carburant automobile premium" },
         { name: "Gasoil", desc: "Pour le transport et l'industrie" },
@@ -224,6 +226,7 @@ export const translations = {
       body: "Founded on excellence and integrity, KC TRADE International S.A has established itself as a benchmark in the import and distribution of petroleum products in Cameroon. Our mission: deliver reliable, sustainable and accessible energy to support economic growth.",
       body2:
         "With modern infrastructure — strategic storage depots and a dedicated tanker fleet — we control the entire supply chain, from source to customer.",
+      imgCaption: "Strategic storage depots",
       values: [
         {
           title: "Uncompromising quality",
@@ -248,6 +251,7 @@ export const translations = {
       title: "Energy solutions tailored to every need",
       intro:
         "We import and supply large volumes of the petroleum products essential to Cameroon's industry, transport and energy sectors.",
+      imgCaption: "Dedicated tanker truck fleet",
       items: [
         { name: "Premium gasoline", desc: "Premium automotive fuel" },
         { name: "Diesel", desc: "For transport and industry" },

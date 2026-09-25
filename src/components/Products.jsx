@@ -2,6 +2,7 @@ import { ArrowUpRight } from 'lucide-react'
 import Reveal from './Reveal'
 import SectionLabel from './SectionLabel'
 import { useLanguage } from '../i18n/LanguageContext'
+import tanker from '../images/tanker.jpg'
 
 export default function Products() {
   const { t } = useLanguage()
@@ -20,6 +21,16 @@ export default function Products() {
               </h2>
               <p className="mt-8 max-w-md text-lg leading-relaxed text-ink/70">
                 {t('products.intro')}
+              </p>
+              <div className="mt-10 overflow-hidden">
+                <img
+                  src={tanker}
+                  alt={t('products.imgCaption')}
+                  className="aspect-[3/4] w-full max-w-sm object-cover transition-transform duration-700 hover:scale-[1.02]"
+                />
+              </div>
+              <p className="mt-3 max-w-sm text-[11px] font-semibold uppercase tracking-[0.25em] text-ink/40">
+                {t('products.imgCaption')}
               </p>
             </Reveal>
           </div>

@@ -1,6 +1,7 @@
 import Reveal from './Reveal'
 import SectionLabel from './SectionLabel'
 import { useLanguage } from '../i18n/LanguageContext'
+import depot from '../images/depot.jpg'
 
 export default function About() {
   const { t } = useLanguage()
@@ -27,6 +28,19 @@ export default function About() {
             </p>
           </Reveal>
         </div>
+
+        <Reveal className="mt-16">
+          <div className="overflow-hidden">
+            <img
+              src={depot}
+              alt={t('about.imgCaption')}
+              className="h-[280px] w-full object-cover transition-transform duration-700 hover:scale-[1.02] sm:h-[400px] lg:h-[480px]"
+            />
+          </div>
+          <p className="mt-3 text-right text-[11px] font-semibold uppercase tracking-[0.25em] text-ink/40">
+            {t('about.imgCaption')}
+          </p>
+        </Reveal>
 
         <div className="mt-20 grid gap-px overflow-hidden border border-ink/10 bg-ink/10 sm:grid-cols-2 lg:grid-cols-4">
           {values.map((v, i) => (
