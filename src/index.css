@@ -9,8 +9,8 @@
   --color-accent: #ff4d00;
   --color-accent-deep: #cc3d00;
   --color-mute: #8b8b90;
-  --font-display: "Syne", sans-serif;
-  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: "Poppins", sans-serif;
+  --font-sans: "Poppins", system-ui, sans-serif;
 }
 
 html {
