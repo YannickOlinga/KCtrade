@@ -1,7 +1,7 @@
 import { ArrowUpRight } from 'lucide-react'
 import Reveal from './Reveal'
 import { useLanguage } from '../i18n/LanguageContext'
-import station from '../images/station.jpg'
+import station from '../images/vie1.jpeg'
 
 export default function Careers() {
   const { t } = useLanguage()
