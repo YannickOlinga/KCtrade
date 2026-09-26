@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { ArrowUpRight, Menu, X } from 'lucide-react'
 import { useLanguage } from '../i18n/LanguageContext'
+import logo from '../images/logo.png'
 
 export default function Navbar() {
   const { lang, setLang, t } = useLanguage()
@@ -17,27 +18,25 @@ export default function Navbar() {
 
   const base = import.meta.env.BASE_URL
   const links = [
+    [base, t('nav.home')],
     [`${base}entreprise.html`, t('nav.entreprise')],
-    [`${base}#products`, t('nav.products')],
-    [`${base}#hse`, t('nav.hse')],
-    [`${base}#careers`, t('nav.careers')],
-    [`${base}#contact`, t('nav.contact')],
   ]
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
+      className={`fixed inset-x-0 top-0 z-50 border-b transition-all duration-500 ${
         scrolled
-          ? 'border-b border-white/10 bg-ink/85 backdrop-blur-xl'
-          : 'bg-transparent'
+          ? 'border-ink/10 bg-paper/90 backdrop-blur-xl'
+          : 'border-transparent bg-paper'
       }`}
     >
-      <div className="mx-auto flex h-[72px] max-w-7xl items-center justify-between px-6 lg:px-10">
-        <a
-          href={base}
-          className="font-display text-lg font-bold tracking-tight text-paper"
-        >
-          KC<span className="text-accent">.</span>TRADE
+      <div className="mx-auto flex h-[96px] max-w-7xl items-center justify-between px-6 lg:px-10">
+        <a href={base} className="inline-flex items-center">
+          <img
+            src={logo}
+            alt="KC Trade International"
+            className="h-16 w-auto"
+          />
         </a>
 
         <nav className="hidden items-center gap-8 lg:flex">
@@ -45,7 +44,7 @@ export default function Navbar() {
             <a
               key={href}
               href={href}
-              className="text-[13px] font-medium text-paper/70 transition-colors hover:text-paper"
+              className="text-[13px] font-medium text-ink/70 transition-colors hover:text-ink"
             >
               {label}
             </a>
@@ -59,7 +58,7 @@ export default function Navbar() {
                 key={l}
                 onClick={() => setLang(l)}
                 className={`px-1.5 py-0.5 uppercase transition-colors ${
-                  lang === l ? 'text-accent' : 'text-paper/40 hover:text-paper/80'
+                  lang === l ? 'text-accent' : 'text-ink/40 hover:text-ink/80'
                 }`}
               >
                 {l}
@@ -76,7 +75,7 @@ export default function Navbar() {
         </div>
 
         <button
-          className="text-paper lg:hidden"
+          className="text-ink lg:hidden"
           onClick={() => setOpen(!open)}
           aria-label="Menu"
         >
@@ -90,7 +89,7 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="overflow-hidden border-b border-white/10 bg-ink/95 backdrop-blur-xl lg:hidden"
+            className="overflow-hidden border-b border-ink/10 bg-paper/95 backdrop-blur-xl lg:hidden"
           >
             <nav className="flex flex-col gap-1 px-6 py-6">
               {links.map(([href, label]) => (
@@ -98,7 +97,7 @@ export default function Navbar() {
                   key={href}
                   href={href}
                   onClick={() => setOpen(false)}
-                  className="py-2.5 font-display text-2xl font-semibold text-paper"
+                  className="py-2.5 font-display text-2xl font-semibold text-ink"
                 >
                   {label}
                 </a>
@@ -109,7 +108,7 @@ export default function Navbar() {
                     key={l}
                     onClick={() => setLang(l)}
                     className={`px-2 py-1 uppercase ${
-                      lang === l ? 'text-accent' : 'text-paper/40'
+                      lang === l ? 'text-accent' : 'text-ink/40'
                     }`}
                   >
                     {l}
