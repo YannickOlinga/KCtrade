@@ -1,6 +1,7 @@
 export const translations = {
   fr: {
     nav: {
+      home: "Accueil",
       entreprise: "L'Entreprise",
       about: "À propos",
       products: "Produits & Services",
@@ -10,14 +11,14 @@ export const translations = {
       cta: "Demander un devis",
     },
     hero: {
-      eyebrow: "KC Trade International S.A. — Douala, Cameroun",
+      eyebrow: "KC Trade International S.A., Douala (Cameroun)",
       lines: ["L'ÉNERGIE", "QUI FAIT AVANCER", "LE CAMEROUN"],
       accentLine: 1,
       subtitle:
-        "Importation, stockage et distribution de produits pétroliers de qualité supérieure — pour alimenter le présent et construire l'avenir.",
+        "Importation, stockage et distribution de produits pétroliers de qualité supérieure pour alimenter le présent et construire l'avenir.",
       ctaPrimary: "Découvrir nos solutions",
       ctaSecondary: "Nous contacter",
-      meta: ["Depuis 2022", "Douala — Akwa", "Groupe Ketchanga"],
+      meta: ["Depuis 2022", "Douala, Akwa", "Groupe Ketchanga"],
     },
     marquee: ["SUPER", "GASOIL", "FIOUL DOMESTIQUE", "BITUME", "LUBRIFIANTS"],
     about: {
@@ -25,7 +26,7 @@ export const translations = {
       title: "Un acteur majeur de la distribution pétrolière au Cameroun",
       body: "Fondée sur l'excellence et l'intégrité, KC TRADE International S.A s'est imposée comme un acteur de référence dans l'importation et la distribution de produits pétroliers au Cameroun. Notre mission : fournir une énergie fiable, durable et accessible pour soutenir le développement économique.",
       body2:
-        "Grâce à nos infrastructures modernes — dépôts de stockage stratégiques et flotte de camions citernes dédiée — nous maîtrisons toute la chaîne d'approvisionnement, de la source jusqu'à nos clients.",
+        "Grâce à nos infrastructures modernes (dépôts de stockage stratégiques et flotte de camions citernes dédiée), nous maîtrisons toute la chaîne d'approvisionnement, de la source jusqu'à nos clients.",
       imgCaption: "Dépôts de stockage stratégiques",
       values: [
         {
@@ -80,7 +81,7 @@ export const translations = {
     hse: {
       label: "Engagement HSE",
       title: "La sécurité et l'environnement d'abord",
-      body: "Chez KC TRADE International S.A, la performance économique va de pair avec la responsabilité sociale et environnementale. Notre politique HSE — Hygiène, Sécurité, Environnement — est exigeante et s'applique à tous les niveaux de notre chaîne d'activité.",
+      body: "Chez KC TRADE International S.A, la performance économique va de pair avec la responsabilité sociale et environnementale. Notre politique HSE (Hygiène, Sécurité, Environnement) est exigeante et s'applique à tous les niveaux de notre chaîne d'activité.",
       pillars: [
         {
           title: "Prévention des risques",
@@ -110,7 +111,7 @@ export const translations = {
         email: "Email",
         phone: "Téléphone",
         location: "Adresse",
-        locationValue: "Siège social : Douala — Akwa, Cameroun",
+        locationValue: "Siège social : Akwa, Douala, Cameroun",
       },
       form: {
         name: "Nom complet",
@@ -125,16 +126,16 @@ export const translations = {
       title: "Plus qu'une entreprise, une marque",
       intro:
         "KC TRADE International S.A. se définit comme apporteur de solutions dans le transport des produits pétroliers, le transit, la logistique, la prestation de services et le commerce général.",
-      meta: ["Créée en 2022", "Akwa — Douala", "Groupe Ketchanga"],
+      meta: ["Créée en 2022", "Akwa, Douala", "Groupe Ketchanga"],
       about: {
         label: "Qui sommes-nous",
         title: "Une entité du Groupe Ketchanga",
-        body: "Créée en 2022 et située à Akwa-Douala, au 646 rue Sylvanie, KC TRADE International est une entité du Groupe Ketchanga. Notre ambition : répondre aux besoins spécifiques de nos clients en respectant les valeurs fondamentales du groupe — innovation, excellence et satisfaction client.",
+        body: "Créée en 2022 et située à Akwa-Douala, au 646 rue Sylvanie, KC TRADE International est une entité du Groupe Ketchanga. Notre ambition : répondre aux besoins spécifiques de nos clients en respectant les valeurs fondamentales du groupe : innovation, excellence et satisfaction client.",
         body2:
           "Grâce à une équipe compétente et passionnée, nous mettons un point d'honneur à dépasser vos attentes, toujours en quête d'amélioration et d'innovation.",
         facts: [
           { k: "Fondation", v: "2022" },
-          { k: "Siège", v: "646 rue Sylvanie, Akwa — Douala" },
+          { k: "Siège", v: "646 rue Sylvanie, Akwa, Douala" },
           { k: "Groupe", v: "Groupe Ketchanga" },
           { k: "Domaines", v: "Pétrole · Transit · Logistique · Commerce" },
         ],
@@ -201,6 +202,7 @@ export const translations = {
   },
   en: {
     nav: {
+      home: "Home",
       entreprise: "The Company",
       about: "About",
       products: "Products & Services",
@@ -210,14 +212,14 @@ export const translations = {
       cta: "Request a quote",
     },
     hero: {
-      eyebrow: "KC Trade International S.A. — Douala, Cameroon",
+      eyebrow: "KC Trade International S.A., Douala, Cameroon",
       lines: ["THE ENERGY", "DRIVING", "CAMEROON FORWARD"],
       accentLine: 1,
       subtitle:
-        "Import, storage and distribution of premium petroleum products — powering today and building tomorrow.",
+        "Import, storage and distribution of premium petroleum products, powering today and building tomorrow.",
       ctaPrimary: "Explore our solutions",
       ctaSecondary: "Get in touch",
-      meta: ["Since 2022", "Douala — Akwa", "Ketchanga Group"],
+      meta: ["Since 2022", "Douala, Akwa", "Ketchanga Group"],
     },
     marquee: ["PREMIUM GASOLINE", "DIESEL", "DOMESTIC FUEL OIL", "BITUMEN", "LUBRICANTS"],
     about: {
@@ -225,7 +227,7 @@ export const translations = {
       title: "A leading player in petroleum distribution in Cameroon",
       body: "Founded on excellence and integrity, KC TRADE International S.A has established itself as a benchmark in the import and distribution of petroleum products in Cameroon. Our mission: deliver reliable, sustainable and accessible energy to support economic growth.",
       body2:
-        "With modern infrastructure — strategic storage depots and a dedicated tanker fleet — we control the entire supply chain, from source to customer.",
+        "With modern infrastructure (strategic storage depots and a dedicated tanker fleet), we control the entire supply chain, from source to customer.",
       imgCaption: "Strategic storage depots",
       values: [
         {
@@ -280,7 +282,7 @@ export const translations = {
     hse: {
       label: "HSE Commitment",
       title: "Safety and environment first",
-      body: "At KC TRADE International S.A, economic performance goes hand in hand with social and environmental responsibility. Our HSE policy — Health, Safety, Environment — is demanding and applies at every level of our operations.",
+      body: "At KC TRADE International S.A, economic performance goes hand in hand with social and environmental responsibility. Our HSE policy (Health, Safety, Environment) is demanding and applies at every level of our operations.",
       pillars: [
         {
           title: "Risk prevention",
@@ -310,7 +312,7 @@ export const translations = {
         email: "Email",
         phone: "Phone",
         location: "Address",
-        locationValue: "Head office: Douala — Akwa, Cameroon",
+        locationValue: "Head office: Akwa, Douala, Cameroon",
       },
       form: {
         name: "Full name",
@@ -325,16 +327,16 @@ export const translations = {
       title: "More than a company, a brand",
       intro:
         "KC TRADE International S.A. positions itself as a solutions provider in petroleum product transport, transit, logistics, services and general trade.",
-      meta: ["Founded in 2022", "Akwa — Douala", "Ketchanga Group"],
+      meta: ["Founded in 2022", "Akwa, Douala", "Ketchanga Group"],
       about: {
         label: "Who we are",
         title: "A member of the Ketchanga Group",
-        body: "Founded in 2022 and based in Akwa-Douala at 646 rue Sylvanie, KC TRADE International is an entity of the Ketchanga Group. Our ambition: meet the specific needs of our clients while upholding the group's core values — innovation, excellence and customer satisfaction.",
+        body: "Founded in 2022 and based in Akwa-Douala at 646 rue Sylvanie, KC TRADE International is an entity of the Ketchanga Group. Our ambition: meet the specific needs of our clients while upholding the group's core values: innovation, excellence and customer satisfaction.",
         body2:
           "With a skilled and passionate team, we strive to exceed expectations, always seeking improvement and innovation.",
         facts: [
           { k: "Founded", v: "2022" },
-          { k: "Head office", v: "646 rue Sylvanie, Akwa — Douala" },
+          { k: "Head office", v: "646 rue Sylvanie, Akwa, Douala" },
           { k: "Group", v: "Ketchanga Group" },
           { k: "Fields", v: "Petroleum · Transit · Logistics · Trade" },
         ],

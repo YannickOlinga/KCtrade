@@ -1,4 +1,3 @@
-import { ArrowUpRight } from 'lucide-react'
 import Reveal from './Reveal'
 import SectionLabel from './SectionLabel'
 import { useLanguage } from '../i18n/LanguageContext'
@@ -40,19 +39,16 @@ export default function Products() {
           <div className="border-t border-ink/15">
             {items.map((item, i) => (
               <Reveal key={i} delay={i * 0.06}>
-                <div className="group flex items-center justify-between gap-6 border-b border-ink/15 py-7 transition-colors hover:bg-paper">
-                  <div className="flex items-baseline gap-6">
-                    <span className="font-display text-sm font-bold text-ink/30">
-                      {String(i + 1).padStart(2, '0')}
-                    </span>
-                    <div>
-                      <h3 className="font-display text-2xl font-bold tracking-tight sm:text-3xl">
-                        {item.name}
-                      </h3>
-                      <p className="mt-1 text-sm text-ink/50">{item.desc}</p>
-                    </div>
+                <div className="group flex items-center gap-6 border-b border-ink/15 py-7 transition-colors hover:bg-paper">
+                  <span className="font-display text-sm font-bold text-ink/30">
+                    {String(i + 1).padStart(2, '0')}
+                  </span>
+                  <div>
+                    <h3 className="font-display text-2xl font-bold tracking-tight sm:text-3xl">
+                      {item.name}
+                    </h3>
+                    <p className="mt-1 text-sm text-ink/50">{item.desc}</p>
                   </div>
-                  <ArrowUpRight className="h-6 w-6 shrink-0 text-ink/30 transition-all duration-300 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-accent" />
                 </div>
               </Reveal>
             ))}
