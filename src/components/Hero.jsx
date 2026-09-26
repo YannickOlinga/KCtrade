@@ -10,12 +10,12 @@ export default function Hero() {
   const meta = t('hero.meta')
 
   return (
-    <section id="top" className="relative overflow-hidden bg-ink">
+    <section id="top" className="relative">
       <motion.div
         initial={{ opacity: 0, scale: 1.06 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1.6, ease: [0.22, 1, 0.36, 1] }}
-        className="absolute inset-0"
+        className="pointer-events-none fixed inset-0 -z-10"
       >
         <img
           src={cover}
@@ -24,11 +24,11 @@ export default function Hero() {
           decoding="async"
           className="h-full w-full object-cover"
         />
+        <div
+          className="absolute inset-0 bg-gradient-to-b from-ink/70 via-ink/20 to-ink/90"
+          aria-hidden
+        />
       </motion.div>
-      <div
-        className="pointer-events-none absolute inset-0 bg-gradient-to-b from-ink/70 via-ink/20 to-ink/90"
-        aria-hidden
-      />
 
       <div className="relative mx-auto flex min-h-screen max-w-7xl flex-col justify-end px-6 pb-16 pt-32 lg:px-10">
         <motion.div
