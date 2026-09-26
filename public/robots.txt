@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yannickolinga.github.io/KCtrade/sitemap.xml
