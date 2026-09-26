@@ -26,6 +26,8 @@ export default function Products() {
                 <img
                   src={tanker}
                   alt={t('products.imgCaption')}
+                  loading="lazy"
+                  decoding="async"
                   className="aspect-[3/4] w-full max-w-sm object-cover transition-transform duration-700 hover:scale-[1.02]"
                 />
               </div>

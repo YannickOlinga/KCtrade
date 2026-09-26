@@ -32,6 +32,8 @@ export default function Careers() {
             <img
               src={station}
               alt=""
+              loading="lazy"
+              decoding="async"
               className="aspect-[4/5] w-full object-cover lg:max-h-[480px]"
             />
           </Reveal>

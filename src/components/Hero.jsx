@@ -20,6 +20,8 @@ export default function Hero() {
         <img
           src={cover}
           alt=""
+          fetchPriority="high"
+          decoding="async"
           className="h-full w-full object-cover"
         />
       </motion.div>

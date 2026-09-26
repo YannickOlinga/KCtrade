@@ -34,6 +34,8 @@ export default function About() {
             <img
               src={depot}
               alt={t('about.imgCaption')}
+              loading="lazy"
+              decoding="async"
               className="h-[280px] w-full object-cover transition-transform duration-700 hover:scale-[1.02] sm:h-[400px] lg:h-[480px]"
             />
           </div>
