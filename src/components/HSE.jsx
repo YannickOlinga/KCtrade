@@ -39,7 +39,7 @@ export default function HSE() {
                 delay={i * 0.1}
                 className="group bg-ink p-8 transition-colors duration-300 hover:bg-ink-soft"
               >
-                <div className="flex h-12 w-12 items-center justify-center border border-white/15 text-accent transition-colors duration-300 group-hover:border-accent">
+                <div className="flex h-12 w-12 items-center justify-center border border-white/15 text-flame transition-colors duration-300 group-hover:border-flame">
                   <Icon className="h-5 w-5" />
                 </div>
                 <h3 className="mt-8 font-display text-xl font-bold tracking-tight">

@@ -51,7 +51,11 @@ export default function About() {
               delay={i * 0.1}
               className="group relative bg-paper p-8 transition-colors duration-300 hover:bg-ink"
             >
-              <span className="font-display text-sm font-bold text-accent">
+              <span
+                className={`font-display text-sm font-bold ${
+                  i % 2 ? 'text-flame' : 'text-accent'
+                }`}
+              >
                 {String(i + 1).padStart(2, '0')}
               </span>
               <h3 className="mt-6 font-display text-xl font-bold tracking-tight transition-colors group-hover:text-paper">

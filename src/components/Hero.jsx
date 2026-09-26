@@ -55,7 +55,7 @@ export default function Hero() {
               }}
             >
               {i === accentLine ? (
-                <span className="text-accent">{line}</span>
+                <span className="text-accent-bright">{line}</span>
               ) : (
                 line
               )}
@@ -112,9 +112,7 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2, duration: 0.8 }}
           className="absolute bottom-6 left-1/2 hidden -translate-x-1/2 lg:block"
-        >
-          <ArrowDown className="h-4 w-4 animate-bounce text-paper/30" />
-        </motion.div>
+        > </motion.div>
       </div>
     </section>
   )

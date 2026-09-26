@@ -161,7 +161,9 @@ export default function Entreprise() {
                     delay={i * 0.1}
                     className="group bg-paper-soft p-8 transition-colors duration-300 hover:bg-ink"
                   >
-                    <Icon className="h-6 w-6 text-accent" />
+                    <Icon
+                      className={`h-6 w-6 ${i % 2 ? 'text-flame' : 'text-accent'}`}
+                    />
                     <span className="mt-8 block font-display text-sm font-bold text-ink/30 transition-colors group-hover:text-paper/30">
                       {String(i + 1).padStart(2, '0')}
                     </span>
