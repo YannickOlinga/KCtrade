@@ -2,7 +2,7 @@ export const translations = {
   fr: {
     nav: {
       home: "Accueil",
-      entreprise: "L'Entreprise",
+      entreprise: "Entreprise",
       about: "À propos",
       products: "Produits & Services",
       hse: "Engagement HSE",
@@ -122,7 +122,7 @@ export const translations = {
       },
     },
     ent: {
-      label: "L'Entreprise",
+      label: "Entreprise",
       title: "Plus qu'une entreprise, une marque",
       intro:
         "KC TRADE International S.A. se définit comme apporteur de solutions dans le transport des produits pétroliers, le transit, la logistique, la prestation de services et le commerce général.",
